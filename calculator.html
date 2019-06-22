@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                var a = $(this).val();
+                $("#show").val($("#show").val()+a);
+            });
+
+            $("#equal").click(function() {
+               var a = $("#show").val();
+               $("#show").val(eval(a));
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="show"><br>
+    <input type="submit" class="btn" value="1">
+    <input type="submit" class="btn" value="2">
+    <input type="submit" class="btn" value="3"><br>
+    <input type="submit" class="btn" value="4">
+    <input type="submit" class="btn" value="5">
+    <input type="submit" class="btn" value="6"><br>
+    <input type="submit" class="btn" value="7">
+    <input type="submit" class="btn" value="8">
+    <input type="submit" class="btn" value="9"><br>
+    <input type="submit" class="btn" value="+">
+    <input type="submit" class="btn" value="-">
+    <input type="submit" class="btn" value="/"><br>
+    <input type="submit" class="btn" value="*">
+    <input type="submit" id="equal" value="=">
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
